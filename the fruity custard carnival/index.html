@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#F8F5F1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=yes">
+    <title>The Fruity Custard Carnival | Patisserie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div id="pageLoader" class="page-loader">
+        <div class="loader-card">
+            <div class="loader">
+                <p>loading</p>
+                <div class="words">
+                    <span class="word">Delicious</span>
+                    <span class="word">Buttery</span>
+                    <span class="word">Fresh</span>
+                    <span class="word">Flavorful</span>
+                    <span class="word">Delicious</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="flavour-ribbon">
+                <div class="flavour-ribbon-track">
+                    <span>Vanilla ice cream custard</span><span>•</span>
+                    <span>Strawberry custard</span><span>•</span>
+                    <span>Chocolate custard</span><span>•</span>
+                    <span>mixed fruit custard</span><span>•</span>
+                    <span>chocolate custard</span><span>•</span>
+                     <span>Vanilla ice cream custard</span><span>•</span>
+                     <span>Strawberry custard</span><span>•</span>
+                     <span>Chocolate custard</span><span>•</span>
+                     <span>mixed fruit custard</span><span>•</span>
+                     <span>Vanilla ice cream custard</span><span>•</span>
+                    <span>Strawberry custard</span><span>•</span>
+                    <span>Chocolate custard</span><span>•</span>
+                    <span>mixed fruit custard</span><span>•</span>
+                    <span>chocolate custard</span><span>•</span>
+                   
+                </div>
+            </div>
+            <a href="#" class="contact-link">Contact Us</a>
+            <div class="header-actions">
+                <button id="cartBtn" class="cart-btn" aria-label="View cart">
+                    <span class="cart-icon"></span>
+                    <span id="cartCount" class="cart-count"></span>
+                </button>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#" class="logo"><img src="assets/logo-pink.png" alt="The Fruity Custard Carnival"></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#menu">OUR PRODUCTS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#feedback">FEEDBACK</a></li>
+            </ul>
+            <!-- Mobile menu - Uiverse.io by pathikcomp (mobile view only) -->
+            <label class="mobile-menu main" aria-label="Menu">
+                Menu
+                <input class="mobile-menu-inp inp" type="checkbox" checked>
+                <div class="bar">
+                    <span class="top bar-list"></span>
+                    <span class="middle bar-list"></span>
+                    <span class="bottom bar-list"></span>
+                </div>
+                <section class="menu-container">
+                    <a href="#home" class="menu-list">HOME</a>
+                    <a href="#menu" class="menu-list">OUR PRODUCTS</a>
+                    <a href="#about" class="menu-list">ABOUT</a>
+                    <a href="#feedback" class="menu-list">FEEDBACK</a>
+                </section>
+            </label>
+            <button class="search-btn" aria-label="Search">🔍</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Delight in every bite!</h1>
+            <p class="hero-text">Fresh custards, dreamy tastes, and handcrafted desserts made with love. Welcome to The
+                Fruity Custard Carnival.</p>
+            <a href="#menu" class="btn btn-primary">ORDER NOW</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="signature-section">
+        <h2 class="section-title script-title">Signature</h2>
+        <div class="menu-grid" id="menuGrid">
+            <article class="menu-card" data-item="custom-cake" data-price="25">
+                <div class="card-image custom-cake"></div>
+                <h3>Mixed fruit custard</h3>
+                <p>Mixed fruit custard with dry fruit toppings.</p>
+                <div class="card-actions">
+                    <span class="price">₹50</span>
+                    <button class="btn btn-add" data-name="Custom Cake" data-price="25">Add to Cart</button>
+                </div>
+            </article>
+            <article class="menu-card" data-item="custard" data-price="8">
+                <div class="card-image custard"></div>
+                <h3>Vanilla ice cream custard</h3>
+                <p>Velvety vanilla custard with fresh fruit & caramel drizzle.</p>
+                <div class="card-actions">
+                    <span class="price">₹60</span>
+                    <button class="btn btn-add" data-name="Classic Custard" data-price="8">Add to Cart</button>
+                </div>
+            </article>
+            </article>
+            <article class="menu-card" data-item="macarons" data-price="12">
+                <div class="card-image macarons"></div>
+                <h3>Chocolate custard</h3>
+                <p>Delicate French Chocolate custard in assorted flavors — perfect with custard.</p>
+                <div class="card-actions">
+                    <span class="price">₹70</span>
+                    <button class="btn btn-add" data-name="Macarons" data-price="12">Add to Cart</button>
+                </div>
+            </article>
+            <article class="menu-card" data-item="cupcakes" data-price="15">
+                <div class="card-image cupcakes"></div>
+                <h3>Strawberry custard</h3>
+                <p>Strawberry custard with Chocolate & fruit toppings.</p>
+                <div class="card-actions">
+                    <span class="price">₹80</span>
+                    <button class="btn btn-add" data-name="Cupcake Collection" data-price="15">Add to Cart</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Holiday Promo -->
+    <section class="promo-section">
+        <div class="promo-content">
+            <h2 class="script-title">Holiday Collection</h2>
+            <div class="discount-box">20% OFF</div>
+            <a href="#menu" class="btn btn-gold">ORDER TODAY</a>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <aside id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button id="closeCart" class="close-btn" aria-label="Close cart">×</button>
+        </div>
+        <ul id="cartItems" class="cart-items"></ul>
+        <div class="cart-footer">
+            <p class="cart-total">Total: $<span id="cartTotal">0</span></p>
+            <button id="checkoutBtn" class="btn btn-primary">Checkout</button>
+        </div>
+    </aside>
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <!-- Image Lightbox for menu cards -->
+    <div id="imageLightbox" class="image-lightbox" aria-hidden="true">
+        <div class="image-lightbox-dialog" role="dialog" aria-modal="true">
+            <button type="button" class="image-lightbox-close" aria-label="Close image">×</button>
+            <img id="lightboxImage" class="image-lightbox-img" alt="">
+            <p id="lightboxCaption" class="image-lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Customer Feedback Form -->
+    <section id="feedback" class="feedback-section">
+        <h2 class="section-title script-title">We'd Love Your Feedback</h2>
+        <form id="feedbackForm" class="feedback-form">
+            <div class="form-group">
+                <label for="customerName">Your Name *</label>
+                <input type="text" id="customerName" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="customerEmail">Email *</label>
+                <input type="email" id="customerEmail" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label>What did you enjoy?</label>
+                <!-- From Uiverse.io by JkHuger - adapted for favorites -->
+                <div id="checklist">
+                    <input checked value="mixed-fruit" name="favorites" type="checkbox" id="fav-01">
+                    <label for="fav-01">Mixed fruit custard</label>
+                    <input value="vanilla" name="favorites" type="checkbox" id="fav-02">
+                    <label for="fav-02"> iwoce cream custard</label>
+                    <input value="chocolate" name="favorites" type="checkbox" id="fav-03">
+                    <label for="fav-03">Chocolate custard</label>
+                    <input value="strawberry" name="favorites" type="checkbox" id="fav-04">
+                    <label for="fav-04">Strawberry custard</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <div class="radio rating-stars">
+                    <input id="rating-5" type="radio" name="rating" value="5" />
+                    <label for="rating-5" title="5 stars">
+                        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+                        </svg>
+                    </label>
+                    <input id="rating-4" type="radio" name="rating" value="4" />
+                    <label for="rating-4" title="4 stars">
+                        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+                        </svg>
+                    </label>
+                    <input id="rating-3" type="radio" name="rating" value="3" />
+                    <label for="rating-3" title="3 stars">
+                        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+                        </svg>
+                    </label>
+                    <input id="rating-2" type="radio" name="rating" value="2" />
+                    <label for="rating-2" title="2 stars">
+                        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+                        </svg>
+                    </label>
+                    <input id="rating-1" type="radio" name="rating" value="1" />
+                    <label for="rating-1" title="1 star">
+                        <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="feedbackText">Your Feedback *</label>
+                <textarea id="feedbackText" name="feedback" rows="4" required
+                    placeholder="Tell us about your experience..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+              
+                <span>Follow us @FruityCustardCarnival</span>
+            </div>
+            <div class="footer-col">
+                <span class="icon-circle">✉</span>
+                <a href="#feedback">SIGN UP</a> for newsletter
+            </div>
+            <div class="footer-col">
+                <span class="icon-circle">♥</span>
+                <a href="#feedback">ABOUT US</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
